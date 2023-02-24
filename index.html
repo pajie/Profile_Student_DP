@@ -1,14 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+  background-color: #147;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+
+nav {
+  float: left;
+  width: 30%;
+  height: 600px; 
+  background: ##0E86D4;
+  padding: 20px;
+}
+
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 550px; 
+}
+
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+footer {
+  background-color: #147;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
 </head>
 <body>
-    <h1>Resume Database</h1>
+
+
+<header>
+  <h2>DPASC CLASS 15 - 2023</h2>
+</header>
+
+<section>
+  <nav>
     <ul>
+      <p> Students Information </p>
       <li><a href="anjaben.html">SN1 Anjaben PN</a></li>
       <li><a href="Caagbay.html">SN1 Caagbay PN</a></li>
       <li><a href="lingganay.html">SN1 Lingganay PN</a></li>
@@ -35,10 +106,20 @@
       <li><a href="Borja.html">SN1 Borja PN</a></li>
       <li><a href="Cutanda.HTML">SN1 Cutanda PN</a></li>
       <li><a href="S1DP_ANGGA_PN.html">SN1 Angga PN</a></li>
-      
-
-
-      <!-- Add more resumes here as needed -->
     </ul>
+  </nav>
+  
+  <article>
+    <h1>DPASC</h1>
+    <p>Each of these students brings their unique set of skills and experiences. They come from different Units, have different career aspirations and are motivated by different things, but they share a common goal: to become proficient in field and to make a meaningful contribution to the Philippine Navy.</p>
+    <p>Throughout their studies, these Students will learn about various aspects of Data Processing, including data analysis, data visualization, machine learning, and more. They will work with various programming languages and tools, such as Python</p>
+  </article>
+</section>
+
+<footer>
+  <p></p>
+</footer>
+
 </body>
 </html>
+
